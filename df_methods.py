@@ -65,7 +65,7 @@ def get_now():
     today = datetime.date.today()
     now = datetime.datetime.now()
     today = calendar.day_name[today.weekday()]
-    time = datetime.timedelta(hours=now.time().hour, minutes=now.time().minute)
+    time = datetime.timedelta(hours=now.time().hour, minutes=now.time().minute, seconds=now.time().second)
     # return setting.work_days_of_the_week[0], datetime.timedelta(hours=14, minutes=5, seconds=30)
     return today, time
 
